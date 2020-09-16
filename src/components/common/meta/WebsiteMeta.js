@@ -51,6 +51,7 @@ const WebsiteMeta = ({ data, settings, canonical, title, description, image, typ
         <>
             <Helmet>
                 <title>{title}</title>
+                <meta name="google-site-verification" content="oQyxciWFA4tCe5IMLGhoT22YX5do2MZa-0N4u2ETUaY" />
                 <meta name="description" content={description} />
                 <link rel="canonical" href={canonical} />
                 <meta property="og:site_name" content={settings.title} />

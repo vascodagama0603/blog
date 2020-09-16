@@ -24,7 +24,6 @@ var trustAllScripts = function () {
         }
 
         document.getElementsByTagName('head')[0].appendChild(s);
-        document.getElementsByTagName('head')[0].appendChild('<meta name="google-site-verification" content="oQyxciWFA4tCe5IMLGhoT22YX5do2MZa-0N4u2ETUaY" />');
     }
 };
 
