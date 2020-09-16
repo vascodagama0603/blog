@@ -18,7 +18,7 @@ const PostCard = ({ post }) => {
                 {post.tags && <div className="post-card-tags"> <Tags post={post} visibility="public" autolink={false} /></div>}
                 {post.featured && <span>Featured</span>}
                 <h2 className="post-card-title">{post.title}</h2>
-                <meta name="google-site-verification" content="oQyxciWFA4tCe5IMLGhoT22YX5do2MZa-0N4u2ETUaY" />
+                 <meta name="google-site-verification" content="oQyxciWFA4tCe5IMLGhoT22YX5do2MZa-0N4u2ETUaY" />
             </header>
             <section className="post-card-excerpt">{post.excerpt}</section>
             <footer className="post-card-footer">
