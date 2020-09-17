@@ -34,6 +34,9 @@ exports.onRenderBody = ({ setHeadComponents }, pluginOptions) => {
     headComponents.push(
         <script data-ad-client="ca-pub-9180260030467303" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     )
+    headComponents.push(
+        <meta name="google-site-verification" content="oQyxciWFA4tCe5IMLGhoT22YX5do2MZa-0N4u2ETUaY" />
+    )
     // The user has an option to opt out of the theme_color meta tag being inserted into the head.
     if (pluginOptions.theme_color) {
         let insertMetaTag = Object.keys(pluginOptions).includes(
