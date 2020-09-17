@@ -65,7 +65,6 @@ const WebsiteMeta = ({ data, settings, canonical, title, description, image, typ
                 {settings.twitter && <meta name="twitter:site" content={`https://twitter.com/${settings.twitter.replace(/^@/, ``)}/`} />}
                 {settings.twitter && <meta name="twitter:creator" content={settings.twitter} />}
                 <script type="application/ld+json">{JSON.stringify(jsonLd, undefined, 4)}</script>
-                <script data-ad-client="ca-pub-9180260030467303" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             </Helmet>
             <ImageMeta image={shareImage} />
         </>
