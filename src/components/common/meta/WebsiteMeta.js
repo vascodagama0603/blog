@@ -52,6 +52,7 @@ const WebsiteMeta = ({ data, settings, canonical, title, description, image, typ
             <Helmet>
                 <title>{title}</title>
                 <meta name="google-site-verification" content="oQyxciWFA4tCe5IMLGhoT22YX5do2MZa-0N4u2ETUaY" />
+                <script data-ad-client="ca-pub-9180260030467303" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <meta name="description" content={description} /> 
                 <link rel="canonical" href={canonical} />
                 <meta property="og:site_name" content={settings.title} />
@@ -65,7 +66,6 @@ const WebsiteMeta = ({ data, settings, canonical, title, description, image, typ
                 {settings.twitter && <meta name="twitter:site" content={`https://twitter.com/${settings.twitter.replace(/^@/, ``)}/`} />}
                 {settings.twitter && <meta name="twitter:creator" content={settings.twitter} />}
                 <script type="application/ld+json">{JSON.stringify(jsonLd, undefined, 4)}</script>
-                <script data-ad-client="ca-pub-9180260030467303" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             </Helmet>
             <ImageMeta image={shareImage} />
         </>
