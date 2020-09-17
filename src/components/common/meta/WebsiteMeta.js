@@ -54,13 +54,7 @@ const WebsiteMeta = ({ data, settings, canonical, title, description, image, typ
                 <meta name="google-site-verification" content="oQyxciWFA4tCe5IMLGhoT22YX5do2MZa-0N4u2ETUaY" />
                 
                 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107259287-5"></script>
-                <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments)}
-                gtag('js', new Date());
 
-                gtag('config', 'UA-107259287-5');
-                </script>
                 <meta name="description" content={description} /> 
                 <link rel="canonical" href={canonical} />
                 <meta property="og:site_name" content={settings.title} />
@@ -74,6 +68,13 @@ const WebsiteMeta = ({ data, settings, canonical, title, description, image, typ
                 {settings.twitter && <meta name="twitter:site" content={`https://twitter.com/${settings.twitter.replace(/^@/, ``)}/`} />}
                 {settings.twitter && <meta name="twitter:creator" content={settings.twitter} />}
                 <script type="application/ld+json">{JSON.stringify(jsonLd, undefined, 4)}</script>
+                <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments)}
+                gtag('js', new Date());
+
+                gtag('config', 'UA-107259287-5');
+                </script>
             </Helmet>
             <ImageMeta image={shareImage} />
         </>
