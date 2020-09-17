@@ -31,6 +31,9 @@ exports.onRenderBody = ({ setHeadComponents }, pluginOptions) => {
             href={withPrefix(`/manifest.webmanifest`)}
         />
     )
+    headComponents.push(
+        <script data-ad-client="ca-pub-9180260030467303" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    )
     // The user has an option to opt out of the theme_color meta tag being inserted into the head.
     if (pluginOptions.theme_color) {
         let insertMetaTag = Object.keys(pluginOptions).includes(
