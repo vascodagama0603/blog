@@ -113,7 +113,6 @@ const ArticleMetaGhost = ({ data, settings, canonical }) => {
                 {settings.twitter && <meta name="twitter:creator" content={settings.twitter} />}
                 <script type="application/ld+json">{JSON.stringify(jsonLd, undefined, 4)}</script>
                 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107259287-5"></script>
-                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107259287-5"></script>
                 <script>
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){window.dataLayer.push(arguments)}
