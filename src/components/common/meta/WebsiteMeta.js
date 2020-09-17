@@ -70,7 +70,7 @@ const WebsiteMeta = ({ data, settings, canonical, title, description, image, typ
                 <script type="application/ld+json">{JSON.stringify(jsonLd, undefined, 4)}</script>
                 <script>
                 window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments)}
+                function gtag(){window.dataLayer.push(arguments)}
                 gtag('js', new Date());
 
                 gtag('config', 'UA-107259287-5');

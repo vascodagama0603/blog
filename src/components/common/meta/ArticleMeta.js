@@ -116,7 +116,7 @@ const ArticleMetaGhost = ({ data, settings, canonical }) => {
                 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107259287-5"></script>
                 <script>
                 window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments)}
+                function gtag(){window.dataLayer.push(arguments)}
                 gtag('js', new Date());
 
                 gtag('config', 'UA-107259287-5');
