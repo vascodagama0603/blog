@@ -59,7 +59,7 @@ exports.onRenderBody = function (_ref, pluginOptions) {
       content:"oQyxciWFA4tCe5IMLGhoT22YX5do2MZa-0N4u2ETUaY"
     })); 
 
-    var ad = document.createElement('script');
+    var ad = _react.default.createElement('script');
     ad.type = 'text/javascript';
     ad.async = true;
     // 新コードの場合、サイト運営者IDを書き換えてコメントアウトを外す
