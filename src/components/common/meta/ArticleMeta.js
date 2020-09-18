@@ -61,6 +61,7 @@ const ArticleMetaGhost = ({ data, settings, canonical }) => {
     return (
         <>
             <Helmet>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107259287-5"></script>
                 <title>{ghostPost.meta_title || ghostPost.title}</title>
                 <meta name="description" content={ghostPost.meta_description || ghostPost.excerpt} />
                 <link rel="canonical" href={canonical} />
@@ -109,7 +110,7 @@ const ArticleMetaGhost = ({ data, settings, canonical }) => {
 
                 {settings.twitter && <meta name="twitter:site" content={`https://twitter.com/${settings.twitter.replace(/^@/, ``)}/`} />}
                 {settings.twitter && <meta name="twitter:creator" content={settings.twitter} />}
-                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107259287-5"></script>
+                
                 <script>
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments)}
