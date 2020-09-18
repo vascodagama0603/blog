@@ -29,6 +29,8 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <html lang={site.lang} />
                 <style type="text/css">{`${site.codeinjection_styles}`}</style>
                 <body className={bodyClass} />
+                <script data-ad-client="ca-pub-9180260030467303" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
             </Helmet>
 
             <div className="viewport">
