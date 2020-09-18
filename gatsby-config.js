@@ -184,6 +184,60 @@ module.exports = {
                 addUncaughtPages: true,
             },
         },
+        {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+              // Here goes your tracking ID
+              trackingId: 'UA-107259287-5',
+              // Puts tracking script in the head instead of the body
+              head: true,
+              // IP anonymization for GDPR compliance
+              anonymize: true,
+              // Disable analytics for users with `Do Not Track` enabled
+              respectDNT: true,
+              // Avoids sending pageview hits from custom paths
+              exclude: ['/preview/**'],
+              // Specifies what percentage of users should be tracked
+              sampleRate: 100,
+              // Determines how often site speed tracking beacons will be sent
+              siteSpeedSampleRate: 10,
+            }
+        },
+        {  
+            resolve: `gatsby-plugin-google-adsense`,
+            options: {
+                publisherId: `ca-pub-9180260030467303`
+            }
+        },
+
+        {
+            resolve: "gatsby-plugin-google-tagmanager",
+            options: {
+              id: "UA-107259287-5",
+        
+              // Include GTM in development.
+              //
+              // Defaults to false meaning GTM will only be loaded in production.
+              includeInDevelopment: false,
+        
+              // datalayer to be set before GTM is loaded
+              // should be an object or a function that is executed in the browser
+              //
+              // Defaults to null
+              defaultDataLayer: { platform: "gatsby" },
+        
+              // Specify optional GTM environment details.
+              gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
+              gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
+              dataLayerName: "YOUR_DATA_LAYER_NAME",
+        
+              // Name of the event that is triggered
+              // on every Gatsby route change.
+              //
+              // Defaults to gatsby-route-change
+              routeChangeEventName: "YOUR_ROUTE_CHANGE_EVENT_NAME",
+            },
+        },
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-force-trailing-slashes`,

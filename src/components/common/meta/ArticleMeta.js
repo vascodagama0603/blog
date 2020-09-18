@@ -61,7 +61,6 @@ const ArticleMetaGhost = ({ data, settings, canonical }) => {
     return (
         <>
             <Helmet>
-                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107259287-5"></script>
                 <title>{ghostPost.meta_title || ghostPost.title}</title>
                 <meta name="description" content={ghostPost.meta_description || ghostPost.excerpt} />
                 <link rel="canonical" href={canonical} />
