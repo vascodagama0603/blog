@@ -110,14 +110,6 @@ const ArticleMetaGhost = ({ data, settings, canonical }) => {
 
                 {settings.twitter && <meta name="twitter:site" content={`https://twitter.com/${settings.twitter.replace(/^@/, ``)}/`} />}
                 {settings.twitter && <meta name="twitter:creator" content={settings.twitter} />}
-                
-                <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments)}
-                gtag('js', new Date());
-
-                gtag('config', 'UA-107259287-5');
-                </script>
                 <script type="application/ld+json">{JSON.stringify(jsonLd, undefined, 4)}</script>                
             </Helmet>
             <ImageMeta image={shareImage} />

@@ -54,12 +54,23 @@ exports.onRenderBody = function (_ref, pluginOptions) {
         href: (0, _gatsby.withPrefix)("" + icon.src)
       });
     });
-
-
     headComponents.push(_react.default.createElement("meta", {
       name:"google-site-verification",
       content:"oQyxciWFA4tCe5IMLGhoT22YX5do2MZa-0N4u2ETUaY"
     })); 
+
+    var ad = document.createElement('script');
+    ad.type = 'text/javascript';
+    ad.async = true;
+    // 新コードの場合、サイト運営者IDを書き換えてコメントアウトを外す
+    // 旧コードの場合、コメントアウトしたままにする
+    ad.dataset.adClient = "ca-pub-9180260030467303";
+    ad.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
+    var sc = document.getElementsByTagName('script')[0];
+    sc.parentNode.insertBefore(ad, sc);
+    headComponents.push(sc); 
+
+
     headComponents = [].concat(headComponents, iconLinkTags);
   }
 
