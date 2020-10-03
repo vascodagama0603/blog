@@ -1,10 +1,10 @@
 module.exports = {
-    siteUrl: `https://miyaken.tk`, // Site domain. Do not include a trailing slash!
-
-    postsPerPage: 12, // Number of posts shown on paginated pages (changes this requires sometimes to delete the cache)
+    siteUrl: `https://quizzical-benz-b943c2.netlify.app`, // Site domain. Do not include a trailing slash!
+ 
+    postsPerPage: 6, // Number of posts shown on paginated pages (changes this requires sometimes to delete the cache)
 
     siteTitleMeta: `RaspberryPi Blog`, // This allows an alternative site title for meta data for pages.
-    siteDescriptionMeta: `ラズベリーパイの使用方法や日々の実験を紹介します。`, // This allows an alternative site description for meta data for pages.
+    siteDescriptionMeta: `Learing,Trying,Funning,,,`, // This allows an alternative site description for meta data for pages.
 
     shareImageWidth: 1000, // Change to the width of your default share image
     shareImageHeight: 523, // Change to the height of your default share image
