@@ -1,10 +1,10 @@
 {
   "development": {
-    "apiUrl": "https://ghost-blog2.herokuapp.com",
-    "contentApiKey": "74bfbc5ce0350bfc69d11c4180"
+    "apiUrl": "https://blog-tecpi.herokuapp.com/",
+    "contentApiKey": "b94d99587a5de21e56ef6eae98"
   },
   "production": {
-    "apiUrl": "https://ghost-blog2.herokuapp.com",
-    "contentApiKey": "74bfbc5ce0350bfc69d11c4180"
+    "apiUrl": "https://blog-tecpi.herokuapp.com/",
+    "contentApiKey": "b94d99587a5de21e56ef6eae98"
   }
 }
