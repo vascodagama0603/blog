@@ -481,7 +481,7 @@ h2 {
 }
 @media (max-width: 500px) {
     h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -492,7 +492,7 @@ h3 {
 }
 @media (max-width: 500px) {
     h3 {
-        font-size: 1.7rem;
+        font-size: 1.0rem;
     }
 }
 
