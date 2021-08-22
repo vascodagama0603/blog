@@ -1,5 +1,5 @@
 module.exports = {
-    siteUrl: `https://quizzical-benz-b943c2.netlify.app`, // Site domain. Do not include a trailing slash!
+    siteUrl: `https://blog.tecpi.xyz`, // Site domain. Do not include a trailing slash!
  
     postsPerPage: 6, // Number of posts shown on paginated pages (changes this requires sometimes to delete the cache)
 
